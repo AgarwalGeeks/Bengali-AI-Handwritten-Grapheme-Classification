@@ -39,5 +39,5 @@ target: the target column</p><br>
   pip install seaborn<br>
   
 </p>
-<h2>Model: Convolutional Network</h2>
+<h2>Model: Convolutional Neural Network</h2>
 <h2>Accuracy: 98%</h2>
