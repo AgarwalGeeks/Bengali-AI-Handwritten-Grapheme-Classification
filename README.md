@@ -17,20 +17,26 @@ By participating in the competition, you’ll hopefully accelerate Bengali handw
 <p>This dataset contains images of individual hand-written Bengali characters. Bengali characters (graphemes) are written by combining three components: a grapheme_root, vowel_diacritic, and consonant_diacritic. Your challenge is to classify the components of the grapheme in each image. There are roughly 10,000 possible graphemes, of which roughly 1,000 are represented in the training set. The test set includes some graphemes that do not exist in train but has no new grapheme components. It takes a lot of volunteers filling out sheets like this to generate a useful amount of real data; focusing the problem on the grapheme components rather than on recognizing whole graphemes should make it possible to assemble a Bengali OCR system without handwriting samples for all 10,000 graphemes.</p>
 <br>
 <p>Files
-train.csv
-image_id: the foreign key for the parquet files
-grapheme_root: the first of the three target classes
-vowel_diacritic: the second target class
-consonant_diacritic: the third target class
-grapheme: the complete character. Provided for informational purposes only, you should not need to use this.
-test.csv
-Every image in the test set will require three rows of predictions, one for each component. This csv specifies the exact order for you to provide your labels. - row_id: foreign key to the sample submission - image_id: foreign key to the parquet file - component: the required target class for the row (grapheme_root, vowel_diacritic, or consonant_diacritic)
+train.csv<br>
+image_id: the foreign key for the parquet files<br>
+grapheme_root: the first of the three target classes<br>
+vowel_diacritic: the second target class<br>
+consonant_diacritic: the third target class<br>
+grapheme: the complete character. Provided for informational purposes only, you should not need to use this.<br>
+test.csv<br>
+Every image in the test set will require three rows of predictions, one for each component. This csv specifies the exact order for you to provide your labels. -<br> row_id: foreign key to the sample submission -<br> image_id: foreign key to the parquet file - component: the required target class for the row (grapheme_root, vowel_diacritic, or consonant_diacritic)
 
-sample_submission.csv
-row_id: foreign key to test.csv
-target: the target column</p>
+sample_submission.csv<br>
+row_id: foreign key to test.csv<br>
+target: the target column</p><br>
 <h2>Setup</h2>
 <p>
   pip install cv2
   pip install keras
+  pip install matplotlib
+  pip install numpy 
+  pip install pandas
+  pip install seaborn
 </p>
+<h2>Model</h2>
+<img
