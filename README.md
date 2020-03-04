@@ -29,7 +29,7 @@ Every image in the test set will require three rows of predictions, one for each
 sample_submission.csv<br>
 row_id: foreign key to test.csv<br>
 target: the target column</p><br>
-<h2>Setup</h2>
+<h2>Installation</h2>
 <p>
   pip install cv2<br>
   pip install keras<br>
@@ -37,6 +37,7 @@ target: the target column</p><br>
   pip install numpy <br>
   pip install pandas<br>
   pip install seaborn<br>
+  
 </p>
 <h2>Model: Convolutional Network</h2>
 <h2>Accuracy: 98%</h2>
