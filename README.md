@@ -31,12 +31,12 @@ row_id: foreign key to test.csv<br>
 target: the target column</p><br>
 <h2>Setup</h2>
 <p>
-  pip install cv2
-  pip install keras
-  pip install matplotlib
-  pip install numpy 
-  pip install pandas
-  pip install seaborn
+  pip install cv2<br>
+  pip install keras<br>
+  pip install matplotlib<br>
+  pip install numpy <br>
+  pip install pandas<br>
+  pip install seaborn<br>
 </p>
-<h2>Model</h2>
-<img
+<h2>Model: Convolutional Network</h2>
+<h2>Accuracy: 98%</h2>
